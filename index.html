@@ -32,24 +32,6 @@
         button:hover {
             background-color: #0056b3;
         }
-        .list-container {
-            width: 300px;
-            margin-top: 20px;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 10px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        li {
-            padding: 10px;
-            border-bottom: 1px solid #eee;
-            text-align: center;
-        }
         .form-container {
             display: none;
             flex-direction: column;
@@ -68,6 +50,24 @@
             width: 100%;
             box-sizing: border-box;
         }
+        .list-container {
+            width: 300px;
+            margin-top: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -82,6 +82,7 @@
     <div class="list-container">
         <ul id="personList"></ul>
     </div>
+
     <script>
         document.getElementById('addButton').addEventListener('click', () => {
             document.getElementById('formContainer').style.display = 'flex';
